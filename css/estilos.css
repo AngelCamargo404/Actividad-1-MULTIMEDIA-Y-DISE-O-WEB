@@ -1,0 +1,61 @@
+html {
+    box-sizing: border-box;
+    font-size: 62.5%; 
+}
+
+*, *:before, *:after {
+    box-sizing: inherit;
+}
+*{
+    margin: 0;
+}
+/* GLOBALES */
+img{
+    max-height: 60rem;
+    max-width: 60rem;
+}
+a{
+    text-decoration: none;
+}
+/* UTILIDADES */
+.contenedor{
+    padding: 1rem;
+}
+.active{
+    background-color: #e73758;
+    padding: 2rem;
+}
+/* HEADER */
+header{
+    height: 40rem;
+}
+.fondo{
+    background-image: url(../img/imagen-principal.jpg);
+    background-size: cover;
+    background-image: no-repeat;
+    background-position: center center;
+    position: relative;
+}
+.fondo:before{
+    content:'';
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background-color: rgba(0, 0, 0, 0.6);
+}
+/* HEADER --> BARRA */
+.barra{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.barra .navegacion a{
+    margin-right: 0.5rem;
+}
+/* HEADER --> TEXTO PRINCIPAL */
+.texto-header{
+    text-align: center;
+    margin-top: 15rem;
+}
